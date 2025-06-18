@@ -1,0 +1,119 @@
+.table-h {
+  @apply border-b border-t border-[#E9EBEE];
+
+  th {
+    @apply border-b border-t border-[#E9EBEE] bg-[#F4F5F8] py-3;
+  }
+
+  td {
+    @apply border-b border-t border-[#E9EBEE] bg-white p-3 text-[14px];
+  }
+}
+
+.table-tr-hover {
+  tr:hover {
+    @apply bg-[#ECEDF0];
+  }
+}
+
+.table-header-left {
+  th {
+    @apply text-left;
+  }
+}
+
+.table-rg {
+  @apply text-[13px];
+
+  tr {
+    @apply h-[48px];
+  }
+
+  th {
+    @apply px-[18px] py-[17.5px];
+  }
+
+  td {
+    @apply px-2 py-[10px];
+  }
+}
+
+.table-md {
+  @apply border border-gray-200 text-[14px];
+
+  th {
+    @apply border border-gray-200 p-2;
+  }
+
+  td {
+    @apply border border-gray-200 p-2 px-3;
+  }
+}
+
+.table-sm {
+  @apply text-[12px];
+
+  th {
+    @apply p-1;
+  }
+
+  td {
+    @apply p-1;
+  }
+}
+
+.table-inner {
+  @apply border-b border-t border-[#E9EBEE] text-sm;
+
+  th {
+    @apply border-b border-t border-[#E9EBEE] bg-[#F4F5F8] py-3;
+  }
+
+  td {
+    @apply border-b border-t border-[#E9EBEE] bg-white p-3;
+  }
+}
+
+.table-popup-input {
+  & > div {
+    @apply w-full;
+  }
+  div {
+    @apply mb-0;
+  }
+  input {
+    @apply h-[28px] w-full;
+  }
+  .form-date-picker,
+  .form-multi-select {
+    @apply h-[28px] w-[180px];
+  }
+  .search-input {
+    input {
+      @apply w-[180px];
+    }
+    button {
+      @apply bottom-0;
+    }
+  }
+  .select {
+    @apply h-[28px] min-h-[28px] w-[180px];
+
+    .placeholder {
+      @apply leading-[14px];
+    }
+    .singleValue {
+      @apply leading-[20px];
+    }
+    div {
+      @apply h-[28px];
+    }
+  }
+}
+
+.table-inner-line {
+  th:not(:last-child),
+  td:not(:last-child) {
+    @apply border-r;
+  }
+}

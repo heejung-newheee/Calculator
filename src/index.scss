@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./styles/base.scss";
+@import "./styles/scrollbar.scss";
+@import "./styles/typograph.scss";
+@import "./styles/table.scss";
+
+// @use "./styles/base" as *;
+// @use "./styles/scrollbar" as *;
+// @use "./styles/typograph" as *;
+// @use "./styles/table" as *;

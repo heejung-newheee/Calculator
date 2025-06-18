@@ -1,0 +1,35 @@
+@layer base {
+  html {
+    @apply font-normal text-zinc-800 text-base leading-none;
+  }
+
+  :root {
+    // Main colors
+    --primary: #3366ff;
+    --secondary: #0f2d5c;
+    --teriary: #b7cdfb;
+
+    --error: #f01515;
+
+    // Background
+    --background: #f4f5f8;
+    --foreground: #000000;
+    --background-title: #f4f5f8;
+    --background-title-hover: #ecedf0;
+    --background-title-active: #ecf1ff;
+
+    // Gray Scale
+    --gray-1: #333;
+    --gray-2: #858585;
+    --gray-3: #999;
+    --gray-4: #a3a3a3;
+    --gray-5: #d9d9d9;
+
+    --outline: #e9ebee;
+    --disable: #f8f8f8;
+    --white: #fff;
+
+    // Radius
+    --radius: 0.5rem;
+  }
+}
