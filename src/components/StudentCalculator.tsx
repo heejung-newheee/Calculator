@@ -164,10 +164,10 @@ const questions = [
 ];
 
 export default function StudentCalculator() {
-    const [responses, setResponses] = useState({});
-    const [finalScore, setFinalScore] = useState(null);
+    const [responses, setResponses] = useState<{ [key: number]: string }>({});
+    const [finalScore, setFinalScore] = useState<number | null>(null);
 
-    const handleChange = (number, value) => {
+    const handleChange = (number: number, value: string) => {
         setResponses((prev) => ({ ...prev, [number]: value }));
     };
 
@@ -197,7 +197,7 @@ export default function StudentCalculator() {
         });
 
         const average = totalScore / 267;
-        setFinalScore(average.toFixed(3));
+        setFinalScore(parseFloat(average.toFixed(3)));
     };
 
     return (
