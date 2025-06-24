@@ -201,7 +201,7 @@ export default function StudentCalculator() {
     };
 
     return (
-        <div className="max-w-5xl mx-auto p-8 bg-white rounded-xl shadow">
+        <div className="max-w-65xl mx-auto p-8 bg-white rounded-xl shadow">
             <table className="table-auto w-full mb-6 border">
                 <thead>
                     <tr className="bg-gray-100">

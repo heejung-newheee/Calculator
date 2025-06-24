@@ -164,7 +164,7 @@ export default function PolicyCalculator() {
     };
 
     return (
-        <div className="max-w-5xl mx-auto p-8 bg-white rounded-xl shadow">
+        <div className="max-w-6xl mx-auto p-8 bg-white rounded-xl shadow">
             {/* <h1 className="text-2xl font-bold mb-6">📑 DEI 정책 점수 계산기</h1> */}
             <table className="table-auto w-full mb-6 border">
                 <thead>

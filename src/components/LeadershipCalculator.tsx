@@ -215,7 +215,7 @@ export default function LeadershipCalculator() {
     };
 
     return (
-        <div className="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow">
+        <div className="max-w-6xl mx-auto p-6 bg-white rounded-xl shadow">
             {/* <h1 className="text-2xl font-bold mb-6">📊 Leadership Survey 점수 계산기</h1> */}
             <table className="table-auto w-full mb-6 border">
                 <thead>
