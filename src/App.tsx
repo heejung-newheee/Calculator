@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import './App.css';
+import CurriculumCalculator from './components/CurriculumCalculator';
+import ExtracurricularCalculator from './components/ExtracurricularCalculator';
+import LeadershipCalculator from './components/LeadershipCalculator';
 import PolicyCalculator from './components/PolicyCalculator';
 import StaffCalculator from './components/StaffCalculator';
 import StudentCalculator from './components/StudentCalculator';
@@ -17,21 +20,42 @@ function App() {
                     className={`px-4 py-2 rounded ${
                         activeTab === 'student' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700'
                     }`}>
-                    Student
+                    Student Demographics
                 </button>
                 <button
                     onClick={() => setActiveTab('staff')}
                     className={`px-4 py-2 rounded ${
                         activeTab === 'staff' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700'
                     }`}>
-                    Staff
+                    Staff Demographics
+                </button>
+                <button
+                    onClick={() => setActiveTab('leadership')}
+                    className={`px-4 py-2 rounded ${
+                        activeTab === 'leadership' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700'
+                    }`}>
+                    School Leadership Demographics
                 </button>
                 <button
                     onClick={() => setActiveTab('policy')}
                     className={`px-4 py-2 rounded ${
                         activeTab === 'policy' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700'
                     }`}>
-                    policy
+                    Policies and Governance
+                </button>
+                <button
+                    onClick={() => setActiveTab('curriculum')}
+                    className={`px-4 py-2 rounded ${
+                        activeTab === 'curriculum' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700'
+                    }`}>
+                    Curriculum and Library
+                </button>
+                <button
+                    onClick={() => setActiveTab('extra')}
+                    className={`px-4 py-2 rounded ${
+                        activeTab === 'extra' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700'
+                    }`}>
+                    Extracurricular Activities
                 </button>
             </div>
 
@@ -39,7 +63,10 @@ function App() {
             <div>
                 {activeTab === 'student' && <StudentCalculator />}
                 {activeTab === 'staff' && <StaffCalculator />}
+                {activeTab === 'leadership' && <LeadershipCalculator />}
                 {activeTab === 'policy' && <PolicyCalculator />}
+                {activeTab === 'curriculum' && <CurriculumCalculator />}
+                {activeTab === 'extra' && <ExtracurricularCalculator />}
             </div>
         </div>
     );
